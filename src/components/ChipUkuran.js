@@ -1,7 +1,6 @@
 import { Pressable, Text, StyleSheet } from 'react-native';
 import { COLORS } from '../theme/colors';
 
-// <ChipUkuran label="S" selected onPress={...} />
 export default function ChipUkuran({ label, selected = false, onPress }) {
   return (
     <Pressable

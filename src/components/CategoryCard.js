@@ -2,9 +2,6 @@ import { Pressable, Text, StyleSheet } from 'react-native';
 import { COLORS } from '../theme/colors';
 import Icon from './Icon';
 
-// <CategoryCard label="Top" icon="top" active onPress={...} />
-// active=true  -> latar primary, ikon & teks putih
-// active=false -> latar putih, border accent, ikon & teks accent
 export default function CategoryCard({ label, icon, active = false, onPress }) {
   const warna = active ? COLORS.card : COLORS.accent;
   return (
@@ -20,11 +17,11 @@ export default function CategoryCard({ label, icon, active = false, onPress }) {
 const styles = StyleSheet.create({
   card: {
     minWidth: 74,              // W 74
-    height: 88,                // H 88
-    paddingHorizontal: 16,     // padding 8 16
+    height: 88,                
+    paddingHorizontal: 16,    
     paddingVertical: 8,
-    gap: 8,                    // gap 8
-    borderRadius: 10,          // radius 10
+    gap: 8,                   
+    borderRadius: 10,          
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
